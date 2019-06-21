@@ -1,0 +1,14 @@
+<div>indicate: {{indicate}}</div>
+<mat-tab-group>
+  <mat-tab label="Instagram">
+    <webview class="webview"
+              preload="./preload.js"
+              src="https://www.instagram.com"
+              httpreferrer="https://www.walla.co.il/"></webview>
+  </mat-tab>
+  <mat-tab label="Facebook">
+      <webview class="webview" #webview src="https://www.facebook.com"></webview>  
+  </mat-tab>
+</mat-tab-group>
+
+<!-- <router-outlet></router-outlet> -->
